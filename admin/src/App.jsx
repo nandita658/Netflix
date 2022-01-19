@@ -9,6 +9,7 @@ import User from './Elements/Pages/User/User';
 import NewUser from './Elements/Pages/NewUser/NewUser';
 import ProductList from './Elements/Pages/ProductList/ProductList';
 import Product from './Elements/Pages/Product/Product';
+import NewProduct from './Elements/Pages/NewProduct/NewProduct';
 
 const App = () => {
   return (
@@ -23,7 +24,7 @@ const App = () => {
           <Route path="/newUser" element={<NewUser/>} />
           <Route path="/products" element={<ProductList/>} />
           <Route path="/products/:productId" element={<Product/>} />
-          <Route path="/newProduct" element={<NewUser/>} />
+          <Route path="/newProduct" element={<NewProduct/>} />
         </Routes>
       </div>
     </Router>

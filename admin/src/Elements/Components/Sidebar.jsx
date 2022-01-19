@@ -3,6 +3,7 @@ import React from 'react';
 import "./Sidebar.css";
 import { AttachMoney, BarChart, ChatBubbleOutline, DynamicFeed, LineStyle, MailOutline, PermIdentity, Report, Storefront, Timeline, TrendingUp, WorkOutline } from "@material-ui/icons";
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Sidebar = () => {
     return (
@@ -11,10 +12,12 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
-                            <LineStyle className="sidebarIcon" />
-                            Home
-                        </li>
+                        <Link exact to='/' className='link'>
+                            <li className={"sidebarListItem active"}>
+                                <LineStyle className="sidebarIcon" />
+                                Home
+                            </li>
+                        </Link>
                         <li className="sidebarListItem">
                             <Timeline className='sidebarIcon' />
                             Analytics

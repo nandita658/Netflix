@@ -79,24 +79,24 @@
     justify-content: space-between;
 }
 
-.productFormLeft {
+.productFromLeft {
     display: flex;
     flex-direction: column;
 }
 
-.productFormLeft>label {
+.productFromLeft>label {
     margin-bottom: 10px;
     color: gray;
 }
 
-.productFormLeft>input {
+.productFromLeft>input {
     margin-bottom: 10px;
     border: none;
     padding: 5px;
     border-bottom: 1px solid gray;
 }
 
-.productFormLeft>select {
+.productFromLeft>select {
     margin-bottom: 10px;
 }
 
