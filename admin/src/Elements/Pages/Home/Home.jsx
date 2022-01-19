@@ -4,13 +4,18 @@ import FeaturedInfo from '../../Components/FeaturedInfo';
 import {userData} from "../../../dummyData";
 
 import "./Home.css";
+import WidgetSm from '../../Components/WidgetSm';
+import WidgetLg from '../../Components/WidgetLg';
 
 const Home = () => {
     return (
         <div className='home'>
             <FeaturedInfo />
             <Chart data={userData} title="User Analytics" grid dataKey="Active User" />
-            <div className="homeWidgets"></div>
+            <div className="homeWidgets">
+                <WidgetSm />
+                <WidgetLg />
+            </div>
         </div>
     )
 }
