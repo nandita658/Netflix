@@ -15,8 +15,10 @@ const App = () => {
   return (
     <Router>
       <Topbar/>
+      {console.log("topbar")}
       <div className='container'>
         <Sidebar/>
+        {console.log("sidebar")}
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route path="/users" element={<UserList/>} />
